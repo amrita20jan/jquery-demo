@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $("#btnjson").click(function(){
+     $.getJSON("getjson.json",function(result){
+			$("#FirstName").append(result.FirstName);
+			$("#LastName").append(result.LastName);
+			$("#Data").append(result.Data);
+     });
+   });
+});
